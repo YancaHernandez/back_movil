@@ -1,8 +1,10 @@
 import {Document} from 'mongoose';
 
 export interface Dishes extends Document{
-    name: string;
-    capacity: number;
+    title: string,
+    description: string,
+    price: number,
+    table_id: string,
     status: string;
     created: Date;
 }

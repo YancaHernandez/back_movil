@@ -13,8 +13,8 @@ export class CreateDishesDto {
         message:'La descripcion debe ser un numero'
     })
     description: string;
-    imagen: string;
-    mesa_id: object; 
+    price: number;
+    table_id: string; 
     status: string; //Activa,Inactiva,Anulada,En Uso
 }
 
@@ -23,7 +23,7 @@ export class UpdateDishesDto {
         message:'El titlo es requerido'
     })
     title: string;
-
+    
     @IsNotEmpty({
         message:'La descripcion es requerida'
     })
@@ -31,7 +31,7 @@ export class UpdateDishesDto {
         message:'La descripcion debe ser un numero'
     })
     description: string;
-    imagen: string;
-    mesa_id: object; 
+    price: number;
+    table_id: string; 
     status: string;
 }
