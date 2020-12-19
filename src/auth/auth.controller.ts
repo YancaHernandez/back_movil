@@ -27,6 +27,7 @@ export class AuthController {
         const payload: Payload = {
             name: user.name,
             email: user.email,
+            type: user.type,
         }
 
         const token = await this.authService.signPayload(payload);

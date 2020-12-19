@@ -6,16 +6,10 @@ export class CreateDishesDto {
     })
     title: string;
 
-    @IsNotEmpty({
-        message:'La descripcion es requerida'
-    })
-    @IsInt({
-        message:'La descripcion debe ser un numero'
-    })
     description: string;
     price: number;
     table_id: string; 
-    status: string; //Activa,Inactiva,Anulada,En Uso
+    status?: string; //Activa,Inactiva,Anulada,En Uso
 }
 
 export class UpdateDishesDto {
@@ -33,5 +27,5 @@ export class UpdateDishesDto {
     description: string;
     price: number;
     table_id: string; 
-    status: string;
+    status?: string;
 }
