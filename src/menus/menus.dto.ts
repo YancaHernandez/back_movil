@@ -5,13 +5,6 @@ export class CreateTableDto {
         message:'El nombre es requerido'
     })
     name: string;
-
-    @IsNotEmpty({
-        message:'La capacidad es requerida'
-    })
-    @IsInt({
-        message:'La capacidad debe ser un numero'
-    })
     description: number;
     status: string; //Activa,Inactiva,Anulada,En Uso
 }
