@@ -12,12 +12,12 @@ export class CreateTableDto {
     @IsInt({
         message:'La capacidad debe ser un numero'
     })
-    capacity: number;
+    description: number;
     status: string; //Activa,Inactiva,Anulada,En Uso
 }
 
 export class UpdateTableDto {
     name: string;
-    capacity: number;
+    description: number;
     status: string; //Activa,Inactiva,Anulada,En Uso
 }
