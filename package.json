@@ -71,6 +71,10 @@
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
     },
+    "main": "dist/index.js",
+    "engines": {
+      "node": "12.18.4"
+    },
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
   }
